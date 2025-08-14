@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+
         /* Simple spinner for loading state */
         .loader {
             border: 2px solid #f3f3f3;
@@ -23,140 +25,287 @@
             display: inline-block;
             margin-right: 8px;
         }
+
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
     <div class="container mx-auto max-w-4xl p-4 sm:p-8">
-        
+
         <!-- Header -->
         <header class="text-center mb-10">
             <h1 class="text-4xl sm:text-5xl font-bold text-indigo-700">Church Website Proposal</h1>
             <p class="mt-4 text-lg text-gray-600">Your partner in building a digital home for your community.</p>
         </header>
 
-           <!-- Introduction -->
+        <!-- Introduction -->
         <div class="bg-white p-8 rounded-xl shadow-md mb-8 border border-gray-200">
             <h2 class="text-2xl font-semibold mb-4 text-gray-800">Introduction</h2>
             <p class="text-gray-600 leading-relaxed">
-                This document outlines the proposed features for your new church website. Our goal is to create a welcoming and user-friendly online hub for your community. Please review the lists, fill in your contact details, and submit the form to send your selections to us.
+                This document outlines the proposed features for your new church website. Our goal is to create a
+                welcoming and user-friendly online hub for your community. Please review the lists, fill in your contact
+                details, and submit the form to send your selections to us.
             </p>
         </div>
 
 
         <form id="proposalForm">
-            
+
             <!-- Core Features -->
             <div class="mb-10">
-                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-200 pb-3">Core Features (Highly Recommended)</h2>
-                <p class="text-gray-600 mb-6">These are essential for a modern, functional church website and are included in the base package.</p>
+                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-200 pb-3">Core Features (Highly Recommended)
+                </h2>
+                <p class="text-gray-600 mb-6">These are essential for a modern, functional church website and are
+                    included in the base package.</p>
                 <div class="space-y-4">
                     <!-- Feature Item -->
                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="Homepage" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <input type="checkbox" name="core_features" value="Homepage"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
                         <div class="ml-4">
                             <span class="font-semibold text-gray-900">Homepage</span>
-                            <p class="text-gray-600 text-sm">Attractive landing page with church mission, values, and latest updates.</p>
+                            <p class="text-gray-600 text-sm">Attractive landing page with church mission, values, and
+                                latest updates.</p>
                         </div>
                     </div>
                     <!-- Add other core features similarly -->
-                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="About Us Page" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
-                        <div class="ml-4"><span class="font-semibold text-gray-900">About Us Page</span><p class="text-gray-600 text-sm">Information about the church history, beliefs, leadership team.</p></div>
+                    <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
+                        <input type="checkbox" name="core_features" value="About Us Page"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <div class="ml-4"><span class="font-semibold text-gray-900">About Us Page</span>
+                            <p class="text-gray-600 text-sm">Information about the church history, beliefs, leadership
+                                team.</p>
+                        </div>
                     </div>
                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="Services & Programs" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
-                        <div class="ml-4"><span class="font-semibold text-gray-900">Services & Programs</span><p class="text-gray-600 text-sm">Service times, weekly schedules, ministries, and small group info.</p></div>
+                        <input type="checkbox" name="core_features" value="Services & Programs"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Services & Programs</span>
+                            <p class="text-gray-600 text-sm">Service times, weekly schedules, ministries, and small
+                                group info.</p>
+                        </div>
                     </div>
                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="Sermon Library" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
-                        <div class="ml-4"><span class="font-semibold text-gray-900">Sermon Library</span><p class="text-gray-600 text-sm">Audio/video sermons with categories and search.</p></div>
+                        <input type="checkbox" name="core_features" value="Sermon Library"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Sermon Library</span>
+                            <p class="text-gray-600 text-sm">Audio/video sermons with categories and search.</p>
+                        </div>
                     </div>
                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="Events Calendar" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
-                        <div class="ml-4"><span class="font-semibold text-gray-900">Events Calendar</span><p class="text-gray-600 text-sm">Upcoming church programs, conferences, and activities.</p></div>
+                        <input type="checkbox" name="core_features" value="Events Calendar"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Events Calendar</span>
+                            <p class="text-gray-600 text-sm">Upcoming church programs, conferences, and activities.</p>
+                        </div>
                     </div>
                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="Contact Page" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
-                        <div class="ml-4"><span class="font-semibold text-gray-900">Contact Page</span><p class="text-gray-600 text-sm">Location, map, contact form, and social media links.</p></div>
+                        <input type="checkbox" name="core_features" value="Contact Page"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Contact Page</span>
+                            <p class="text-gray-600 text-sm">Location, map, contact form, and social media links.</p>
+                        </div>
                     </div>
                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="Online Giving/Donation" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
-                        <div class="ml-4"><span class="font-semibold text-gray-900">Online Giving/Donation</span><p class="text-gray-600 text-sm">Secure payment integration for tithes and offerings.</p></div>
+                        <input type="checkbox" name="core_features" value="Online Giving/Donation"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Online Giving/Donation</span>
+                            <p class="text-gray-600 text-sm">Secure payment integration for tithes and offerings.</p>
+                        </div>
                     </div>
                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="News/Announcements Blog" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
-                        <div class="ml-4"><span class="font-semibold text-gray-900">News/Announcements Blog</span><p class="text-gray-600 text-sm">Updates and important messages from the church.</p></div>
+                        <input type="checkbox" name="core_features" value="News/Announcements Blog"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <div class="ml-4"><span class="font-semibold text-gray-900">News/Announcements Blog</span>
+                            <p class="text-gray-600 text-sm">Updates and important messages from the church.</p>
+                        </div>
                     </div>
                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="Mobile-Friendly Design" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
-                        <div class="ml-4"><span class="font-semibold text-gray-900">Mobile-Friendly Design</span><p class="text-gray-600 text-sm">Optimized for viewing on smartphones and tablets.</p></div>
+                        <input type="checkbox" name="core_features" value="Mobile-Friendly Design"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Mobile-Friendly Design</span>
+                            <p class="text-gray-600 text-sm">Optimized for viewing on smartphones and tablets.</p>
+                        </div>
                     </div>
                     <div class="flex items-start p-4 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <input type="checkbox" name="core_features" value="Basic SEO Optimization" class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
-                        <div class="ml-4"><span class="font-semibold text-gray-900">Basic SEO Optimization</span><p class="text-gray-600 text-sm">Helps the church appear in search engine results.</p></div>
+                        <input type="checkbox" name="core_features" value="Basic SEO Optimization"
+                            class="h-5 w-5 rounded border-gray-300 mt-1 flex-shrink-0" checked disabled>
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Basic SEO Optimization</span>
+                            <p class="text-gray-600 text-sm">Helps the church appear in search engine results.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Optional Features -->
             <div class="mb-10">
-                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-200 pb-3">Optional Features (Select As Needed)</h2>
+                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-200 pb-3">Optional Features (Select As
+                    Needed)</h2>
                 <p class="text-gray-600 mb-6">These add extra convenience, engagement, and ministry reach.</p>
                 <div class="space-y-4">
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Live Streaming Integration" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Live Streaming Integration</span><p class="text-gray-600 text-sm">Embed or link live services (YouTube, Facebook, Vimeo, etc.).</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Online Membership Registration" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Online Membership Registration</span><p class="text-gray-600 text-sm">Allow new members to join and register online.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Prayer Request Submission" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Prayer Request Submission</span><p class="text-gray-600 text-sm">Members can submit prayer requests securely.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Ministries & Departments Page" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Ministries & Departments Page</span><p class="text-gray-600 text-sm">Dedicated pages for youth, choir, outreach, etc.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Volunteer Sign-Up Forms" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Volunteer Sign-Up Forms</span><p class="text-gray-600 text-sm">For event helpers and ministry workers.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Event Registration & Ticketing" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Event Registration & Ticketing</span><p class="text-gray-600 text-sm">For special programs with RSVP or ticket purchase.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Photo & Video Gallery" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Photo & Video Gallery</span><p class="text-gray-600 text-sm">Media showcase of past events.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Newsletter Subscription" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Newsletter Subscription</span><p class="text-gray-600 text-sm">Collect emails for periodic church updates.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Members-Only Area" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Members-Only Area</span><p class="text-gray-600 text-sm">Secure portal for internal church resources.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Bible Reading Plan" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Bible Reading Plan</span><p class="text-gray-600 text-sm">Daily or weekly reading schedules online.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Language Translation" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Language Translation</span><p class="text-gray-600 text-sm">For multilingual congregations.</p></div></label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input type="checkbox" name="optional_features" value="Podcast Integration" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0"><div class="ml-4"><span class="font-semibold text-gray-900">Podcast Integration</span><p class="text-gray-600 text-sm">Audio messages available on Spotify/Apple Podcasts.</p></div></label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Live Streaming Integration"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Live Streaming Integration</span>
+                            <p class="text-gray-600 text-sm">Embed or link live services (YouTube, Facebook, Vimeo,
+                                etc.).</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Online Membership Registration"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Online Membership
+                                Registration</span>
+                            <p class="text-gray-600 text-sm">Allow new members to join and register online.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Prayer Request Submission"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Prayer Request Submission</span>
+                            <p class="text-gray-600 text-sm">Members can submit prayer requests securely.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Ministries & Departments Page"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Ministries & Departments Page</span>
+                            <p class="text-gray-600 text-sm">Dedicated pages for youth, choir, outreach, etc.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Volunteer Sign-Up Forms"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Volunteer Sign-Up Forms</span>
+                            <p class="text-gray-600 text-sm">For event helpers and ministry workers.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Event Registration & Ticketing"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Event Registration &
+                                Ticketing</span>
+                            <p class="text-gray-600 text-sm">For special programs with RSVP or ticket purchase.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Photo & Video Gallery"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Photo & Video Gallery</span>
+                            <p class="text-gray-600 text-sm">Media showcase of past events.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Newsletter Subscription"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Newsletter Subscription</span>
+                            <p class="text-gray-600 text-sm">Collect emails for periodic church updates.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Members-Only Area"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Members-Only Area</span>
+                            <p class="text-gray-600 text-sm">Secure portal for internal church resources.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Bible Reading Plan"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Bible Reading Plan</span>
+                            <p class="text-gray-600 text-sm">Daily or weekly reading schedules online.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Language Translation"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Language Translation</span>
+                            <p class="text-gray-600 text-sm">For multilingual congregations.</p>
+                        </div>
+                    </label>
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200"><input
+                            type="checkbox" name="optional_features" value="Podcast Integration"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                        <div class="ml-4"><span class="font-semibold text-gray-900">Podcast Integration</span>
+                            <p class="text-gray-600 text-sm">Audio messages available on Spotify/Apple Podcasts.</p>
+                        </div>
+                    </label>
                 </div>
             </div>
 
             <!-- Technical & Administrative Features -->
             <div class="mb-10">
-                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-200 pb-3">Technical & Administrative Features ⚙️</h2>
+                <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-200 pb-3">Technical & Administrative
+                    Features ⚙️</h2>
                 <div class="space-y-4">
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
-                        <input type="checkbox" name="technical_features" value="Content Management System (CMS)" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
+                        <input type="checkbox" name="technical_features" value="Content Management System (CMS)"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
                         <div class="ml-4">
                             <span class="font-semibold text-gray-900">Content Management System (CMS)</span>
                             <p class="text-gray-600 text-sm">Easy admin panel for adding/updating content.</p>
-                            <p class="text-xs text-indigo-700 mt-1 italic"><b>Explanation:</b> This is the 'back office' of your website. It's a simple, secure area where you can easily post new sermons or add events without needing technical skills.</p>
+                            <p class="text-xs text-indigo-700 mt-1 italic"><b>Explanation:</b> This is the 'back office'
+                                of your website. It's a simple, secure area where you can easily post new sermons or add
+                                events without needing technical skills.</p>
                         </div>
                     </label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
-                        <input type="checkbox" name="technical_features" value="User Roles & Permissions" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
+                        <input type="checkbox" name="technical_features" value="User Roles & Permissions"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
                         <div class="ml-4">
                             <span class="font-semibold text-gray-900">User Roles & Permissions</span>
                             <p class="text-gray-600 text-sm">Limit who can edit, approve, or publish content.</p>
-                             <p class="text-xs text-indigo-700 mt-1 italic"><b>Explanation:</b> This lets you give different people different levels of access, ensuring only authorized people can make important changes.</p>
+                            <p class="text-xs text-indigo-700 mt-1 italic"><b>Explanation:</b> This lets you give
+                                different people different levels of access, ensuring only authorized people can make
+                                important changes.</p>
                         </div>
                     </label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
-                        <input type="checkbox" name="technical_features" value="Analytics & Reporting" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
+                        <input type="checkbox" name="technical_features" value="Analytics & Reporting"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
                         <div class="ml-4">
                             <span class="font-semibold text-gray-900">Analytics & Reporting</span>
                             <p class="text-gray-600 text-sm">Track visitors and page views.</p>
-                            <p class="text-xs text-indigo-700 mt-1 italic"><b>Explanation:</b> This helps you understand how people use your site, like which sermons are most popular. This is valuable for knowing what your community finds engaging.</p>
+                            <p class="text-xs text-indigo-700 mt-1 italic"><b>Explanation:</b> This helps you understand
+                                how people use your site, like which sermons are most popular. This is valuable for
+                                knowing what your community finds engaging.</p>
                         </div>
                     </label>
-                    <label class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
-                        <input type="checkbox" name="technical_features" value="Security & Backups" class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
+                    <label
+                        class="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
+                        <input type="checkbox" name="technical_features" value="Security & Backups"
+                            class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 mt-1 flex-shrink-0">
                         <div class="ml-4">
                             <span class="font-semibold text-gray-900">Security & Backups</span>
                             <p class="text-gray-600 text-sm">Regular backups and protection from hacks.</p>
-                            <p class="text-xs text-indigo-700 mt-1 italic"><b>Explanation:</b> This is like a security system and insurance policy for your website. It protects the site from online threats and saves a copy regularly.</p>
+                            <p class="text-xs text-indigo-700 mt-1 italic"><b>Explanation:</b> This is like a security
+                                system and insurance policy for your website. It protects the site from online threats
+                                and saves a copy regularly.</p>
                         </div>
                     </label>
                 </div>
@@ -166,8 +315,10 @@
             <div class="mb-10">
                 <h2 class="text-3xl font-bold mb-6 border-b-2 border-indigo-200 pb-3">Your Additional Requests 📝</h2>
                 <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
-                    <label for="additional_requests" class="block text-sm font-medium text-gray-700 mb-2">Please list anything else you want to see on your church website.</label>
-                    <textarea id="additional_requests" name="additional_requests" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    <label for="additional_requests" class="block text-sm font-medium text-gray-700 mb-2">Please list
+                        anything else you want to see on your church website.</label>
+                    <textarea id="additional_requests" name="additional_requests" rows="4"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"></textarea>
                 </div>
             </div>
 
@@ -177,25 +328,40 @@
                 <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 space-y-6">
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
                     </div>
                     <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number (Optional)</label>
-                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number
+                            (Optional)</label>
+                        <input type="tel" id="phone" name="phone"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
                     </div>
                 </div>
+            </div>
+
+           <div class="mb-10 text-center border-t border-gray-200 pt-8">
+                <h3 class="text-lg font-semibold text-gray-800">Questions? Contact me directly:</h3>
+                <p class="mt-2 text-xl font-bold text-indigo-700">Olamide Olaniyi</p>
+                <p class="text-gray-600 mt-1">
+                    <a href="mailto:mideolaniyi@outlook.com" class="text-indigo-600 hover:underline">mideolaniyi@outlook.com</a> | 
+                    <a href="tel:+2348026406566" class="text-indigo-600 hover:underline">+234 802 6406 566</a>
+                </p>
             </div>
 
             <!-- Submission & Next Steps -->
             <div class="bg-indigo-600 text-white p-8 rounded-xl shadow-lg">
                 <h2 class="text-2xl font-semibold mb-4">Next Steps</h2>
-                <p class="mb-6">Once we receive your selections, we will finalize the project scope & pricing, provide a project timeline, and begin design and development.</p>
+                <p class="mb-6">Once we receive your selections, we will finalize the project scope & pricing, provide a
+                    project timeline, and begin design and development.</p>
                 <div id="form-status" class="text-center mb-4"></div>
-                <button type="submit" id="submit-button" class="w-full bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg hover:bg-indigo-50 transition-colors text-lg flex items-center justify-center">
+                <button type="submit" id="submit-button"
+                    class="w-full bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg hover:bg-indigo-50 transition-colors text-lg flex items-center justify-center">
                     <span id="button-text">Finalize and Send Selections</span>
                 </button>
             </div>
@@ -204,11 +370,13 @@
     </div>
 
     <!-- Modal for submission confirmation -->
-    <div id="confirmationModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
+    <div id="confirmationModal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 p-4">
         <div class="bg-white p-8 rounded-lg shadow-2xl text-center max-w-sm mx-auto">
             <h3 class="text-2xl font-bold text-indigo-700 mb-4">Thank You!</h3>
             <p class="text-gray-600 mb-6">Your selections have been sent successfully. We will be in touch soon!</p>
-            <button id="closeModal" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-indigo-700 transition-colors">
+            <button id="closeModal"
+                class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-indigo-700 transition-colors">
                 Close
             </button>
         </div>
@@ -225,7 +393,7 @@
         // --- IMPORTANT: Replace with your own Formspree endpoint ---
         const FORMSPREE_ENDPOINT = 'YOUR_FORMSPREE_ENDPOINT_HERE';
 
-        form.addEventListener('submit', async function(event) {
+        form.addEventListener('submit', async function (event) {
             event.preventDefault();
 
             // --- Show loading state ---
@@ -240,7 +408,7 @@
             // --- Collect form data from all sections ---
             const optionalFeatures = Array.from(document.querySelectorAll('input[name="optional_features"]:checked')).map(cb => cb.value);
             const technicalFeatures = Array.from(document.querySelectorAll('input[name="technical_features"]:checked')).map(cb => cb.value);
-            
+
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
@@ -248,7 +416,7 @@
                 "Selected Optional Features": optionalFeatures.length > 0 ? optionalFeatures.join(', ') : 'None',
                 "Selected Technical Features": technicalFeatures.length > 0 ? technicalFeatures.join(', ') : 'None',
                 "Additional Requests": document.getElementById('additional_requests').value || 'None',
-                 _subject: `New Church Website Proposal Submission from ${document.getElementById('name').value}`,
+                _subject: `New Church Website Proposal Submission from ${document.getElementById('name').value}`,
             };
 
             // --- Send data to Formspree ---
@@ -297,4 +465,5 @@
     </script>
 
 </body>
+
 </html>
